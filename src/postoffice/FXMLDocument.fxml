@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="postoffice.LogIn">
+   <children>
+      <AnchorPane layoutX="331.0" prefHeight="400.0" prefWidth="338.0" style="-fx-background-color: #FFFFF;">
+         <children>
+            <Label layoutX="51.0" layoutY="187.0" text="username" textFill="#e50202">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="229.0" text="password" textFill="#e80707">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="155.0" layoutY="188.0" promptText="username" />
+            <PasswordField fx:id="password" layoutX="156.0" layoutY="230.0" promptText="password" />
+            <Button fx:id="button" layoutX="169.0" layoutY="284.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: #ff4d4d;" text="login" />
+            <Label fx:id="wronglogin" layoutX="68.0" layoutY="136.0" prefHeight="18.0" prefWidth="266.0" />
+            <Text fill="#b50909" layoutX="125.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" wrappingWidth="140.776123046875">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="331.0" style="-fx-background-color: #ff4d4d;">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="132.0" layoutY="98.0" stroke="#d0f405" strokeType="OUTSIDE" strokeWidth="5.0" text="Post" textAlignment="CENTER" wrappingWidth="107.71014404296875">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="183.0" stroke="#ccef08" strokeType="OUTSIDE" strokeWidth="5.0" text="Office" textAlignment="CENTER" wrappingWidth="122.48321533203125">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

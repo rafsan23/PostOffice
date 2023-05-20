@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ff4d4d;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="postoffice.AllordersController">
+   <children>
+      <TableView fx:id="tableview" layoutY="36.0" prefHeight="200.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="serialnumbercolumn" prefWidth="128.7999939918518" text="Serial Number" />
+            <TableColumn fx:id="ordernamecolumn" prefWidth="340.0" text="Order Name" />
+            <TableColumn fx:id="amountcolumn" prefWidth="214.39999389648438" text="Amount" />
+        </columns>
+      </TableView>
+      <Text layoutX="322.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order List" wrappingWidth="56.53240966796875" />
+      <TextField fx:id="serialNumber" layoutX="14.0" layoutY="269.0" promptText="serial number" />
+      <TextField fx:id="orderName" layoutX="201.0" layoutY="269.0" promptText="order name" />
+      <TextField fx:id="amount" layoutX="14.0" layoutY="318.0" promptText="amount" />
+      <Button layoutX="201.0" layoutY="318.0" mnemonicParsing="false" onAction="#addOrderOnClick" prefHeight="26.0" prefWidth="150.0" text="Add new order" />
+      <Button layoutX="630.0" layoutY="373.0" mnemonicParsing="false" onAction="#goback" prefHeight="26.0" prefWidth="70.0" text="Go Back" />
+   </children>
+</AnchorPane>
